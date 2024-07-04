@@ -1,7 +1,6 @@
 header h1{
     float: left;
     text-align: left;
-    font-style: bold;
     font-size: 50px;
     padding: 20px;
     padding-left: 10%;
@@ -27,11 +26,11 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-main h1{
+main h2{
     text-align: center;
 }
 
-figure p{
+figure figcaption{
     text-align: center;
     margin-top: 0;
 }
@@ -64,8 +63,19 @@ footer p{
     display: none;
 }
 
+.navigation.show{
+    display: flex;
+    background-color: lightgrey;
+    height: 5.5rem;
+}
+
 .show a {
     display: block;
+    flex:1 1 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
 }
 
 #menu {
