@@ -1,0 +1,12 @@
+@keyframes fadein{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+img{
+    display:block;
+    margin: auto;
+    background-color: black;
+    animation-name: fadein;
+    animation-duration: 10s;
+}

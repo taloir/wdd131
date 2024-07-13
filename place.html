@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Ireland country page | Landon McConnell">
+    <meta name="author" content="Landon McConnell">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Ireland</h1>
+    </header>
+    <main>
+        <img class="small-img" src="images/ireland-small.webp" alt="castle in ireland">
+        <img class="large-img" src="images/ireland-large.webp" alt="castle in ireland">
+        <div id="data">
+            <h2>Data</h2>
+            <p>Area: 32,595 mi²</p>
+            <p>Population: 5.127 million</p>
+            <p>Capital: Dublin</p>
+            <p>Languages: English, Gaeilge</p>
+            <p>Currency: Euro</p>
+            <p>Time zone: UTC+1</p>
+            <p>Calling code: 353</p>
+            <p>Internet TLD: .ie</p>
+        </div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/rain_icon.svg" alt="rainy weather icon">
+            <p id="temperature">Temperature: 20</p>
+            <p>Conditions: wet.</p>
+            <p id="windspeed">Wind speed: 5</p>
+            <p id="windchill">Label: value</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span>, Landon McConnell, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</body>
+</html>
