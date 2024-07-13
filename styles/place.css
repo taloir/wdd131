@@ -57,9 +57,9 @@ main{
 .weather-icon{
     display: block;
     margin: auto;
-    border-style: style;
-    border-width: 20px;
-    border-color: var(--primary-color);
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--secondary-color);
     width: 5rem;
     height: 5rem;
 }
