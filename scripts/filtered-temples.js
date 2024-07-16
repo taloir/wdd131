@@ -1,4 +1,5 @@
-const navigation = document.querySelector('.navigation')
+const templesdiv = document.querySelector('.temples');
+const navigation = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {
@@ -63,12 +64,70 @@ const temples = [
 	  imageUrl:
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
+	{
+	  templeName: "Denver Colorado",
+	  location: "Denver, Colorado",
+	  dedicated: "1986, October, 28",
+	  area: 29117,
+	  imageUrl:
+	  "https://www.churchofjesuschrist.org/imgs/367efe302ab1d79a8b3b2ca34c080a2db5e22baa/full/1600%2C/0/default"
+	},
+	{
+	  templeName: "Kirtland Ohio",
+	  location: "Kirtland, Ohio",
+	  dedicated: "1883, March, 27",
+	  area: 15000,
+	  imageUrl:
+	  "https://www.churchofjesuschrist.org/imgs/702a311674a9949283bf2ea756bf5f065455a316/full/1600%2C/0/default"
+	},
+	{
+	  templeName: "Kona Hawaii",
+	  location: "Kona, Hawaii",
+	  dedicated: "2000, January, 24",
+	  area: 10700,
+	  imageUrl:
+	  "https://www.churchofjesuschrist.org/imgs/c242078ac8317d9f5b9effc15e3ef032c18ed061/full/1920%2C/0/default"
+	}
 	// Add more temple objects here...
   ];
 
-  temples.forEach(display(0));
+const alltemples = document.querySelector("#all-temples");
+  alltemples.addEventListener("click", () => {
+	  templesdiv.innerHTML = "";
+	  temples.forEach(display);
+  });
+
+const oldtemples = document.querySelector("#old-temples");
+oldtemples.addEventListener("click", () => {
+	templesdiv.innerHTML = "";
+	let filteredTemples = temples.filter(temple => { return parseInt(temple.dedicated.split(",")[0]) <= 1900});
+	filteredTemples.forEach(display);
+});
+
+const newtemples = document.querySelector("#new-temples");
+newtemples.addEventListener("click", () => {
+	templesdiv.innerHTML = "";
+	let filteredTemples = temples.filter(temple => {return parseInt(temple.dedicated.split(",")[0]) >= 2000});
+	filteredTemples.forEach(display);
+});
+
+const largetemples = document.querySelector("#large-temples");
+largetemples.addEventListener("click", () => {
+	templesdiv.innerHTML = "";
+	let filteredTemples = temples.filter(temple => {return temple.area >= 90000});
+	filteredTemples.forEach(display);
+});
+
+const smalltemples = document.querySelector("#small-temples");
+smalltemples.addEventListener("click", () => {
+	templesdiv.innerHTML = "";
+	let filteredTemples = temples.filter(temple => {return temple.area <= 10000});
+	filteredTemples.forEach(display);
+});
+
+temples.forEach(display);
   
- function display(temple){
+function display(temple){
 	let card = document.createElement("div");
 	card.classList.add("temple-card");
 
@@ -85,9 +144,11 @@ const temples = [
 	image.src = temple.imageUrl
 	image.lazyloading = true
 
-	card.addElement(title);
-	card.addElement(location);
-	card.addElement(dedication);
-	card.addElement(size);
-	card.addElement(image);
+	card.appendChild(title);
+	card.appendChild(location);
+	card.appendChild(dedication);
+	card.appendChild(size);
+	card.appendChild(image);
+
+	templesdiv.appendChild(card);
   };
