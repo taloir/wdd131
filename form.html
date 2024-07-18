@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="product review form | WDD131 | Landon McConnell">
+    <meta name="author" content="Landon MConnell">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <h1>Product Review Form</h1>
+    <form method="get" action="review.html" class="rf1">
+        <label>Product Name<select id="product" name="product" required>
+            <option value="">Select a product</option>
+            
+        </select></label>
+        <label>Overall Rating:</label>
+        <label><input type="radio" id="1star" name="stars" required>⭐</label>
+        <label><input type="radio" id="2star" name="stars" required>⭐⭐</label>
+        <label><input type="radio" id="3star" name="stars" required>⭐⭐⭐</label>
+        <label><input type="radio" id="4star" name="stars" required>⭐⭐⭐⭐</label>
+        <label><input type="radio" id="5star" name="stars" required>⭐⭐⭐⭐⭐</label>
+        <label>Installation Date<input type="date" id="installation" name="installation" required></label>
+        <fieldset>
+            <legend>Which features did you find useful in the product? (check all that apply)</legend>
+        <label>Durability<input type="checkbox" id="feature1" name="feature1" value="feature1"></label>
+        <label>Ease of Use<input type="checkbox" id="feature2" name="feature2" value="feature2"></label>
+        <label>Performance<input type="checkbox" id="feature3" name="feature3" value="feature3"></label>
+        </fieldset>
+        <label>Written Review<textarea id="paragraph" name="paragraph"></textarea></label>
+        <label>Your Name<input type="text" id="name" name="name"></label>
+
+        <label><input type="submit"></label>
+    </form>
+    <footer>
+        <p>&copy;<span id="currentYear"></span>, Landon McConnell, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
