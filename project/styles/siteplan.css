@@ -1,0 +1,62 @@
+:root{
+    --wheat: rgb(233, 225, 185);
+    --leather: rgb(129, 45, 1);
+    --bronze: rgb(205, 127, 50);
+    --blue: rgb(173, 196, 253);
+}
+
+body{
+    color: var(--leather);
+    background: var(--wheat);
+}
+
+h1,h2{
+    font-family: "Bona Nova SC", serif;
+}
+
+#title{
+    font-size: medium;
+}
+
+p{
+    font-family: "Maname", serif;
+}
+
+div{
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: var(--leather);
+}
+
+#pallette{
+    display: flex;
+    width: 60rem;
+}
+
+#bronze{
+    background-color: var(--bronze);
+    color: var(--wheat);
+}
+
+#russet{
+    background-color: var(--leather);
+    color: var(--wheat);
+}
+
+#wheat{
+    background-color: var(--wheat);
+    color: var(--leather);
+}
+
+#sky{
+    background-color: var(--blue);
+    color: var(--leather);
+}
+
+footer{
+    background:var(--bronze);
+    height: 100px;
+}
