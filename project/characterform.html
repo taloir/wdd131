@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creation</title>
+    <meta name="description" content="Legend Engine Home Site | Landon McConnell">
+    <meta name="author" content="Landon McConnell">
+    <link rel="stylesheet" href="styles/characterform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Maname&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Make a Character</h1>
+        <nav>
+            <a href="index.html">Legend Engine</a>
+            <a href="setting.html">Titans Wager</a>
+            <a href="characterform.html">Character Creation</a>
+        </nav>
+    </header>
+    <main>
+        <div class="column"></div>
+        <form action="success.html" id="cf1">
+            <fieldset>
+            <legend>Game premise</legend>
+            <label>Starting Location<p>Shepfield</p></label>
+            <label>Group identity<input type="text" required></label>
+            <label>Major force<input type="text" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Character Details</legend>
+            <label>Name<input type="text" name="name" required></label>
+            <label>Species<select id="species" name="species" required>
+                <option value="">Select a playable species</option>
+                <option value="">Adlet</option>
+                <option value="">Anansi</option>
+                <option value="">Cambion</option>
+                <option value="">Centaur</option>
+                <option value="">Dwarf</option>
+                <option value="">Harpy</option>
+                <option value="">Human</option>
+                <option value="">Sanctus</option>
+                <option value="">Spirit animal</option>
+                <option value=""></option>
+            </select></label>
+
+            <label>Emotional Drive<input type="text"></label>
+            <label>Class<select id="class" name="class" required>
+                <option value="">Select a class</option>
+                <option value="">Bounty hunter</option>
+                <option value="">Demigod</option>
+                <option value="">Hustler</option>
+                <option value="">Lawman</option>
+                <option value="">Monk</option>
+                <option value="">Monster</option>
+                <option value="">Philosopher</option>
+                <option value="">Pioneer</option>
+                <option value="">Priest</option>
+                <option value="">Smith</option>
+                <option value="">Soldier</option>
+            </select></label>
+            </fieldset>
+            <label><input type="submit"></label>
+        </form>
+        <div class="column"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span>, Landon McConnell, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

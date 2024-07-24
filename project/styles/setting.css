@@ -1,0 +1,167 @@
+:root{
+    --wheat: rgb(252, 243, 200);
+    --leather: rgb(129, 45, 1);
+    --bronze: rgb(205, 127, 50);
+    --blue: rgb(202, 214, 248);
+}
+
+h1,h2{
+    font-family: "Bona Nova SC", serif;
+}
+
+a,p{
+    font-family: "Maname", serif;
+}
+
+header{
+    background-color: var(--wheat);
+}
+
+header h1{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: var(--leather);
+    color:var(--wheat);
+    text-align: center;
+    max-width: 300px;
+}
+
+nav{
+    display:flex;
+    margin: auto;
+    max-width: 600px;
+    background-color: var(--bronze);
+}
+
+nav a{
+    width: 1fr;
+    text-align: center;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: var(--leather);
+    display: block;
+    padding: .3rem;
+    padding-top: 0px;
+    margin: .6rem auto;
+    background-color: var(--leather);
+    color:var(--wheat)
+}
+
+main{
+    display: grid;
+    grid-template-columns: 5rem 2fr 1fr 5rem;
+    grid-template-rows: 5rem auto auto;
+    background-color: var(--wheat);
+}
+
+main h1{
+    margin-left: 8rem;
+    margin-bottom: 0;
+    grid-column: 2/4;
+}
+
+main p{
+    grid-column: 2/3;
+    text-align: center;
+    background-color: var(--blue);
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    border-style: double;
+    border-width: 10px;
+    border-color: var(--leather);
+}
+
+.column{
+    width: 5rem;
+    height: auto;
+    background-color: var(--leather);
+}
+
+.bridge{
+    display: none;
+}
+
+#species-board{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    margin: auto;
+    width: 85%;
+    height: auto;
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+.species-card{
+    border-color: var(--leather);
+    border-width: 5px;
+    border-style: double;
+    border-radius: 3px;
+    background-color: var(--blue);
+    height: auto;
+    width: 15rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.species-card p{
+    background-color: var(--wheat);
+    padding: .5rem;
+    width: auto;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 20rem;
+    height: 15rem;
+    border-style: solid;
+    border-color: var(--leather);
+    border-width: .1rem;
+    float: right;
+}
+
+.species-card img{
+    width: 15rem;
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--leather);
+    color: var(--wheat);
+    padding: 2rem;
+}
+
+
+@media screen and (max-width: 800px){
+
+    main{
+        display: block;
+    }
+
+    main p{
+        padding-bottom: 1rem;
+    }
+
+    .column{
+        display: none;
+    }
+
+    .bridge{
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 3rem;
+        background-color: var(--leather);
+    }
+
+    img{
+        float:none;
+        margin-bottom: 1rem;
+    }
+
+}
