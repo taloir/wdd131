@@ -51,12 +51,13 @@ nav a{
 main{
     display: grid;
     grid-template-columns: 5rem 1fr 5rem;
+    grid-template-rows: auto auto;
     background-color: var(--wheat);
 }
 
 .column{
     width: 5rem;
-    height: 50rem;
+    height: auto;
     background-color: var(--leather)
 }
 
@@ -146,12 +147,50 @@ footer{
     padding: 2rem;
 }
 
+#vibe{
+    display:block;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+#vibe h1{
+    text-align: center;
+    width: 100%;
+}
+
+#noun-button{
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 5rem;
+    height: 40px;
+    background-color: var(--leather);
+    color:var(--wheat);
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+#noun-box{
+    display:block;
+    margin: auto;
+    background-color: var(--blue);
+    width: 50%;
+    height: 2rem;
+    text-align: center;
+    border-color: var(--leather);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1rem;
+}
 
 @media screen and (max-width: 600px){
 
     main{
         grid-template-columns: 1fr;
-        grid-template-rows: fit-content(20rem) 8rem 1fr;
+        grid-template-rows: auto auto auto auto;
     }
 
     main p{
