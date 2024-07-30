@@ -16,7 +16,6 @@ let nouns = [
 "Smoke",
 "Nature",
 "Bounty",
-"Insignia",
 "Lightning",
 "Star",
 "Mask",
@@ -46,7 +45,6 @@ let nouns = [
 "Circus",
 "Mine",
 "Pillar",
-"Giant",
 "Marathon",
 "Bear",
 "Stage",
@@ -120,7 +118,9 @@ let nouns = [
 "City",
 "Alien",
 "Mine",
-"Brother/Sister"]
+"Winds",
+"Dynamite"
+]
 
 nounButton.addEventListener('click', () => {
 	display(nounBox,nouns)
