@@ -119,7 +119,28 @@ let nouns = [
 "Alien",
 "Mine",
 "Winds",
-"Dynamite"
+"Dynamite",
+"Gravy",
+"Machine",
+"Bridge",
+"Clay",
+"Cliff",
+"Cloud",
+"Diamond",
+"Frame",
+"Garden",
+"Glove",
+"Iron",
+"Key",
+"Lantern",
+"Mirror",
+"Path",
+"Root",
+"Rust",
+"Silk",
+"Tea",
+"Thorn",
+"Weed"
 ]
 
 nounButton.addEventListener('click', () => {
