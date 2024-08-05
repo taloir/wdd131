@@ -53,6 +53,7 @@ main{
     grid-template-columns: 5rem 1fr 5rem;
     grid-template-rows: auto auto auto auto;
     background-color: var(--wheat);
+    padding: 2rem;
 }
 
 main h2{

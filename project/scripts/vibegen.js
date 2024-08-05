@@ -140,7 +140,11 @@ let nouns = [
 "Silk",
 "Tea",
 "Thorn",
-"Weed"
+"Weed",
+"volcano",
+"dune",
+"grave",
+"quicksand"
 ]
 
 nounButton.addEventListener('click', () => {

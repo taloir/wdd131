@@ -16,54 +16,69 @@
 </head>
 <body>
     <header>
-        <h1>Make a Character</h1>
+        <h1>Character Creation</h1>
         <nav>
             <a href="index.html">Legend Engine</a>
-            <a href="setting.html">Titans Wager</a>
+            <a href="settings.html">Settings</a>
             <a href="characterform.html">Character Creation</a>
         </nav>
     </header>
     <main>
         <div class="column"></div>
+        <div id="instructions">
+            <h2>Campaign</h2>
+            <p>Before you start making a character, be sure you have a campaign created for them to be part of! The campaign should inform elements of your characters identity and beliefs, as well as what species and aspects are available to you.</p>
+            <h2>Species</h2>
+            <p>Your species will establish a lot about your appearance and the aspects available to your character.</p>
+            <h2>Beliefs</h2>
+            <p>Your beliefs connect your characters drives to the situations around them.</p>
+            <h2>Class</h2>
+            <p>While not necessary, picking a class can help dial in on your characters abilities and role in the story.</p>
+            <h2>Aspects</h2>
+            <p>These are the meat of what your character is and what they can do.</p>
+            <h2>Approaches</h2>
+            <p>text</p>
+            <h2>Name</h2>
+            <p>text</p>
+        </div>
         <form action="success.html" id="cf1">
             <fieldset>
-            <legend>Game premise</legend>
-            <label>Starting Location<p>Shepfield</p></label>
-            <label>Group identity<input type="text" required></label>
-            <label>Major force<input type="text" required></label>
-            </fieldset>
-            <fieldset>
                 <legend>Character Details</legend>
-            <label>Name<input type="text" name="name" required></label>
-            <label>Species<select id="species" name="species" required>
-                <option value="">Select a playable species</option>
-                <option value="">Adlet</option>
-                <option value="">Anansi</option>
-                <option value="">Cambion</option>
-                <option value="">Centaur</option>
-                <option value="">Dwarf</option>
-                <option value="">Harpy</option>
-                <option value="">Human</option>
-                <option value="">Sanctus</option>
-                <option value="">Spirit animal</option>
-                <option value=""></option>
-            </select></label>
+                <label>Campaign<select id="campaign" name="species" required>
+                    <option value="">Select a campaign</option>
+                </select></label>
+                <label>Species<select id="species" name="species" required>
+                    <option value="">Select a playable species</option>
+                    <option value="adlet">Adlet</option>
+                    <option value="anansi">Anansi</option>
+                    <option value="cambion">Cambion</option>
+                    <option value="centaur">Centaur</option>
+                    <option value="dwarf">Dwarf</option>
+                    <option value="harpy">Harpy</option>
+                    <option value="human">Human</option>
+                    <option value="sanctus">Sanctus</option>
+                    <option value="spirit-animal">Spirit animal</option>
+                </select></label>
 
-            <label>Emotional Drive<input type="text"></label>
-            <label>Class<select id="class" name="class" required>
-                <option value="">Select a class</option>
-                <option value="">Bounty hunter</option>
-                <option value="">Demigod</option>
-                <option value="">Hustler</option>
-                <option value="">Lawman</option>
-                <option value="">Monk</option>
-                <option value="">Monster</option>
-                <option value="">Philosopher</option>
-                <option value="">Pioneer</option>
-                <option value="">Priest</option>
-                <option value="">Smith</option>
-                <option value="">Soldier</option>
-            </select></label>
+                <label id="">Beliefs</label>
+                <label>Class<select id="class" name="class">
+                    <option value="">Select a class</option>
+                    <option value="bounty-hunter">Bounty hunter</option>
+                    <option value="demigod">Demigod</option>
+                    <option value="hustler">Hustler</option>
+                    <option value="lawman">Lawman</option>
+                    <option value="monk">Monk</option>
+                    <option value="monster">Monster</option>
+                    <option value="philosopher">Philosopher</option>
+                    <option value="pioneer">Pioneer</option>
+                    <option value="priest">Priest</option>
+                    <option value="smith">Smith</option>
+                    <option value="soldier">Soldier</option>
+                </select></label>
+                <label id="aspects">Aspects</label>
+                <label>Approach 1<input type="text"></label>
+                <label>Approach 2<input type="text"></label>
+                <label>Name<input type="text" name="name" required></label>
             </fieldset>
             <label><input type="submit" value="Create My Character!"></label>
         </form>
